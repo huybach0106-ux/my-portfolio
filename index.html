@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class ="logo"> Bach </a>
+   
+
+    <nav>
+        <a href = "#" class ="active"> Home </a>
+        <a href = "#" > Services </a>
+        <a href = "#" > Skills </a>
+        <a href = "#" > Education </a>
+        <a href = "#" > Experience </a>
+        <a href = "#" > Contact </a>
+
+    </nav>
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src= "main.jpg" alt="Main Image">   
+
+        </div>
+        <div class="home-content">
+            <h1>Hi I'm <span> Bach </span></h1>
+            <h3 class = "typing-text"> Hehe <span> </span> </h3>
+            <p> Welcome to my portfolio website. Here you can find information about my skills, experience, and projects. Feel free to explore and contact me for any opportunities!</p>   
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/b%C3%A1ch-v%C4%83n-huy-79208035b/"><i class="fa-brands fa-linkedin"></i> </a>
+                <a href="https://github.com/huybach0106-ux"><i class="fa-brands fa-github"> </i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"> </i></a>
+                <a href="https://www.facebook.com/VHBachhh"><i class="fa-brands fa-facebook"> </i></a>
+                <a href="https://www.instagram.com/huybach.17/"><i class="fa-brands fa-instagram"> </i></a>
+                <a href="https://www.tiktok.com/@huybach__"><i class="fa-brands fa-tiktok"> </i></a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+
+                
+
+        
+    </section>
+       <script>
+    let menuIcon = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('nav');
+
+    menuIcon.onclick = () => {
+        // Khi bấm vào icon, nó sẽ đảo ngược trạng thái (thêm/xóa class 'active')
+        menuIcon.classList.toggle('fa-xmark'); // Đổi icon từ 3 gạch sang dấu X
+        navbar.classList.toggle('active');     // Hiện/ẩn menu
+    }
+</script>
+</body>
+</html>
